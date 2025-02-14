@@ -12,7 +12,9 @@ set(CMAKE_C_FLAGS_RELEASE "-Ofast")
 add_library(${PROJECT_NAME} STATIC)
 
 add_subdirectory(src)
-#add_subdirectory(lib)
+add_subdirectory(lib/SDL)
 
-include_directories(include src lib)
+include_directories(include src lib/SDL)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

@@ -9,5 +9,6 @@
 #include "../src/FSNGX_math.h"
 
 extern void printSuma(int a, int b);
+extern void testSDL();
 
 #endif
