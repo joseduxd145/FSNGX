@@ -7,7 +7,7 @@ void printSuma(int a, int b) {
     printf("%d\n", x);
 }
 
-void testSDL(){
+void testSDL(void){
     SDL_Init(SDL_INIT_VIDEO);
     printf("SDL\n");
     SDL_Quit();
